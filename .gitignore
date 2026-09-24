@@ -11,3 +11,10 @@ wheels/
 
 # Personal editor preferences
 .vscode/
+
+# Local tool caches and configuration
+.ruff_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
