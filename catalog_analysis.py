@@ -275,8 +275,8 @@ def build_report(movies):
     """
     print("ОТЧЕТ ПО КАТАЛОГУ")
     print(f"Средний рейтинг: {average_rating(movies)}")
-    _, _, mean_age = catalog_age_stats(movies)
-    print(f"Средний возраст фильмов: {mean_age} лет")
+    newest_age, oldest_age, avg_age = catalog_age_stats(movies)
+    print(f"Средний возраст фильмов: {avg_age} лет")
 
     print("\nТоп-3 фильма:")
     top_movies = sorted(movies, key=lambda movie: movie["rating"], reverse=True)[:3]
